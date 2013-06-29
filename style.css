@@ -1,0 +1,160 @@
+@font-face {
+  font-family: 'fontello';
+  src: url('../Simple_Login_Form/font/fontello.eot?53015338');
+  src: url('../Simple_Login_Form/font/fontello.eot?53015338#iefix') format('embedded-opentype'),
+       url('../Simple_Login_Form/font/fontello.woff?53015338') format('woff'),
+       url('../Simple_Login_Form/font/fontello.ttf?53015338') format('truetype'),
+       url('../Simple_Login_Form/font/fontello.svg?53015338#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?53015338#fontello') format('svg');
+  }
+}
+*/
+ 
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+     
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.icon-lock-filled:before { content: '\e804'; } /* '' */
+.icon-user-1:before { content: '\e802'; } /* '' */
+body {
+  background-color: rgb(67, 67, 67);
+	font-family: 'Quattrocento Sans', sans-serif;
+}
+form {
+	height: 288px;
+	width: 400px;
+	background-color: rgb(249, 249, 242);
+	margin: 100px auto;
+	border-radius: 4px;
+	position: relative;
+}
+span {
+	/*width: 138px;
+	height: 36px;*/
+	padding: 8px 28px 8px 29px;
+	background-color: rgb(255, 163, 0);
+	font-size: 18px;
+	top: 17px;
+	left: -9px;
+	color: white;
+	display: inline-block;
+	position: relative;
+}
+span:before {
+	content: '';
+	width: 20px;
+	height: 20px;
+	bottom: -10px;
+	left: 4px;
+	position: absolute;
+	z-index: -1;
+	background-color: rgb(227, 125, 0);
+
+	-webkit-transform: rotate(45deg);
+  	-moz-transform: rotate(45deg);
+  	-ms-transform: rotate(45deg);
+}
+span:after {
+	content: '';
+	width: 25px;
+	height: 26px;
+	right: -13px;
+	top: 5px;
+	position: absolute;
+	background-color: rgb(255, 163, 0);
+
+	-webkit-transform: rotate(45deg);
+  	-moz-transform: rotate(45deg);
+  	-ms-transform: rotate(45deg);
+}
+input {
+	border: 1px solid rgb(221, 221, 218);
+	border-radius: 2px;
+	padding: 9px 130px 10px 55px;
+	top: 55px;
+	left: 30px;
+	position: relative;
+	display: block;
+	font-size: 16px;
+	font-family: 'Quattrocento Sans', sans-serif;
+	color: rgb(52, 52, 52);
+}
+::-webkit-input-placeholder { /* WebKit browsers */
+    color: rgb(52, 52, 52);
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: rgb(52, 52, 52);
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: rgb(52, 52, 52);
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: rgb(52, 52, 52);
+}
+i.icon-user-1, i.icon-lock-filled {
+	top: 23px;
+	left: 40px;
+	padding-top: 4px;
+	padding-right: 5px;
+	font-size: 23px;
+	color: rgb(0, 197, 255);
+	border-right: 1px solid rgb(221, 221, 218);
+	position: relative;
+}
+button {
+	width: 400px;
+	height: 50px;
+	bottom: 0px;
+	display: block;
+	position: absolute;
+	border: none;
+	padding: 0px;
+	background-color: rgb(0, 197, 255);
+	border-radius: 0px 0px 4px 4px;
+	color: white;
+	font-size: 18px;
+	font-family: 'Quattrocento Sans', sans-serif; 
+	cursor: pointer;
+}
+button:hover {
+	background-color: rgb(60, 195, 240);
+}
+button:active {
+	background-color: rgb(48, 188, 230);
+}
